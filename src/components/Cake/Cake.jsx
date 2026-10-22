@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Cake.css";
+import "./cake.css";
 
 export default function Cake() {
   const [wishMade, setWishMade] = useState(false);
