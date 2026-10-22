@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+.birthday-message-section {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 50px 20px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff7f7;
+
+  background:
+    linear-gradient(180deg, #101c40 0%, #353453 42%,
+    #a35c70 70%, #f18d76 87%, #20233b 100%);
+}
+
+.birthday-message-sky {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1px 1px at 12% 10%, white 80%, transparent),
+    radial-gradient(1px 1px at 35% 15%, white 80%, transparent),
+    radial-gradient(1px 1px at 75% 12%, white 80%, transparent),
+    radial-gradient(1px 1px at 85% 24%, white 80%, transparent),
+    radial-gradient(1px 1px at 25% 29%, white 80%, transparent),
+    radial-gradient(1px 1px at 60% 35%, white 80%, transparent),
+    radial-gradient(1px 1px at 90% 42%, white 80%, transparent),
+    linear-gradient(180deg, transparent 60%, #171d32aa);
+  background-size: 100% 100%;
+}
+
+.birthday-message-content {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.birthday-message-content h1 {
+  margin: 0 0 30px;
+  font: 600 clamp(40px, 7vw, 58px)/1.35 "Dancing Script", cursive;
+  text-shadow: 0 3px 18px #17112655;
+}
+
+.birthday-message-text {
+  font: 14px/1.8 "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.birthday-message-text p {
+  margin: 5px 0;
+}
+
+.birthday-message-text .birthday-thanks {
+  margin: 20px 0;
+}
+
+.birthday-message-heart {
+  margin: 20px 0 8px;
+  font-size: 32px;
+  color: #ffe2eb;
+}
+
+.birthday-brush {
+  position: relative;
+  max-width: 410px;
+  margin: 10px auto 70px;
+  padding: 20px 15px;
+  color: #56364b;
+  transform: rotate(-2deg);
+  background: #ffd1c3;
+  border-radius: 45% 12% 38% 15% / 25% 35% 20% 40%;
+}
+
+.birthday-brush::before {
+  content: "";
+  position: absolute;
+  inset: 5px -5px;
+  z-index: -1;
+  background: #ffd1c3;
+  border-radius: 20% 45% 18% 42%;
+  transform: rotate(3deg);
+}
+
+.birthday-brush p {
+  margin: 0;
+  font: 600 18px/1.6 "Dancing Script", cursive;
+}
+
+.birthday-message-footer {
+  margin: 0;
+  font: 15px "Dancing Script", cursive;
+  color: #fff0e8;
+}
+
+@media (max-width: 600px) {
+  .birthday-message-section { padding: 35px 18px; }
+  .birthday-message-content h1 { margin-bottom: 25px; }
+  .birthday-message-text { font-size: 12px; }
+  .birthday-brush { margin-bottom: 60px; padding: 17px 10px; }
+  .birthday-brush p { font-size: 16px; }
+}

@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+.countdown-section {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px 120px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #fff4f4, #f7eafa 55%, #fff0ed);
+  color: #43294a;
+}
+
+.countdown-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+.countdown-calendar {
+  margin-bottom: 12px;
+  color: #71335d;
+}
+
+.countdown-content h1 {
+  margin: 0;
+  font: 500 clamp(25px, 4vw, 35px) "Dancing Script", cursive;
+}
+
+.countdown-subtitle {
+  margin: 13px 0 48px;
+  font: 12px "Poppins", sans-serif;
+  color: #705a78;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.countdown-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 12px 6px;
+  border: 1px solid #eaddec;
+  border-radius: 19px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 18px #75517d0d;
+}
+
+.countdown-card strong {
+  font: 500 29px "Poppins", sans-serif;
+  color: #39213f;
+}
+
+.countdown-card span {
+  margin-top: 5px;
+  font: 11px "Poppins", sans-serif;
+  color: #76637d;
+}
+
+.countdown-message {
+  margin-top: 55px;
+  font: 600 20px/1.8 "Dancing Script", cursive;
+  color: #6a4b70;
+  transform: rotate(-3deg);
+}
+
+.countdown-message p {
+  margin: 0;
+}
+
+.countdown-heart {
+  margin-top: 42px;
+  font-size: 24px;
+  color: #824568;
+}
+
+/* Pastel hills along the bottom */
+.countdown-hills {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 145px;
+  overflow: hidden;
+}
+
+.countdown-hill {
+  position: absolute;
+  bottom: -35px;
+  width: 120%;
+  height: 125px;
+  left: -10%;
+}
+
+.hill-back {
+  background: #e8d8ef;
+  clip-path: polygon(0 60%, 15% 35%, 28% 60%, 45% 30%, 65% 60%, 80% 35%, 100% 55%, 100% 100%, 0 100%);
+}
+
+.hill-front {
+  height: 75px;
+  background: #f4e6f4;
+  clip-path: polygon(0 50%, 20% 70%, 42% 35%, 60% 65%, 78% 35%, 100% 60%, 100% 100%, 0 100%);
+}
+
+.countdown-flower {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  font-size: 35px;
+  color: #a6a18d;
+}
+
+.flower-a { left: 5%; }
+.flower-b { left: 15%; bottom: 5px; color: #b7a2c9; }
+.flower-c { right: 14%; bottom: 8px; color: #f2b9b1; }
+.flower-d { right: 5%; }
+
+@media (max-width: 600px) {
+  .countdown-section { padding: 35px 16px 110px; }
+  .countdown-subtitle { margin: 12px 0 35px; font-size: 11px; }
+  .countdown-grid { gap: 8px; }
+  .countdown-card { min-height: 78px; border-radius: 14px; padding: 8px 3px; }
+  .countdown-card strong { font-size: clamp(18px, 5vw, 25px); }
+  .countdown-card span { font-size: 9px; }
+  .countdown-message { margin-top: 45px; font-size: 17px; }
+  .countdown-heart { margin-top: 30px; }
+  .countdown-flower { font-size: 27px; }
+}

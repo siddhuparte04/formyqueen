@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+.love-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 18px 55px;
+  overflow: hidden;
+  background: #fff4ee;
+  color: #49324f;
+}
+
+.love-container {
+  position: relative;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.love-heading {
+  position: relative;
+  text-align: center;
+  padding: 12px 0 25px;
+}
+
+.love-main-heart {
+  color: #963663;
+  font-size: 39px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.love-heading h2 {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(29px, 4vw, 40px);
+  font-weight: 700;
+  color: #482c49;
+}
+
+.love-heading > p {
+  margin: 6px 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  color: #664d6a;
+}
+
+.love-top-heart {
+  position: absolute;
+  color: #f18aa7;
+  font-size: 19px;
+}
+
+.heart-one {
+  top: 35px;
+  left: 17%;
+  transform: rotate(-15deg);
+}
+
+.heart-two {
+  top: 50px;
+  right: 17%;
+  color: #bd5d89;
+  transform: rotate(12deg);
+}
+
+.heart-three {
+  top: 95px;
+  right: 7%;
+  font-size: 13px;
+}
+
+/* Cards grid */
+.love-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px 16px;
+}
+
+/* Individual cards */
+.love-card {
+  min-width: 0;
+  min-height: 175px;
+  padding: 19px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  border: 1px solid rgba(143, 94, 130, 0.08);
+  border-radius: 15px;
+
+  transform: rotate(-1deg);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.love-card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.love-card:hover {
+  transform: translateY(-4px) rotate(0deg);
+  box-shadow: 0 8px 20px rgba(103, 66, 92, 0.1);
+}
+
+.love-card.peach {
+  background: #ffeadc;
+}
+
+.love-card.pink {
+  background: #fce3e7;
+}
+
+.love-card.lavender {
+  background: #f2e5f1;
+}
+
+.love-card.blue {
+  background: #eeebf7;
+}
+
+.love-card.rose {
+  background: #fce5e2;
+}
+
+.love-card.purple {
+  background: #f0e5f2;
+}
+
+/* Card icons */
+.love-card-icon {
+  min-height: 37px;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #843c83;
+}
+
+/* Card headings */
+.love-card h3 {
+  margin: 0 0 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #382b50;
+}
+
+/* Card descriptions */
+.love-card p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #62536c;
+}
+
+/* Handwritten note */
+.love-note {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Dancing Script", cursive;
+  font-size: 25px;
+  font-weight: 600;
+  color: #644267;
+  transform: rotate(-9deg);
+}
+
+.love-note span {
+  margin-top: 3px;
+  font-size: 23px;
+  color: #9f426f;
+}
+
+/* Decorative flowers */
+.love-flower {
+  position: absolute;
+  bottom: -35px;
+  color: #aaa18b;
+  font-size: 38px;
+  pointer-events: none;
+}
+
+.flower-left {
+  left: 0;
+  transform: rotate(-25deg);
+}
+
+.flower-right {
+  right: 0;
+  transform: rotate(25deg);
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+  .love-card {
+    min-height: 165px;
+  }
+
+  .love-grid {
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .love-section {
+    min-height: 100svh;
+    padding: 20px 16px 40px;
+  }
+
+  .love-heading {
+    padding: 10px 0 22px;
+  }
+
+  .love-main-heart {
+    font-size: 33px;
+  }
+
+  .love-heading h2 {
+    font-size: clamp(24px, 6.5vw, 31px);
+  }
+
+  .love-heading > p {
+    font-size: 10px;
+  }
+
+  .heart-one {
+    left: 14%;
+    top: 30px;
+  }
+
+  .heart-two {
+    right: 14%;
+    top: 42px;
+  }
+
+  .heart-three {
+    top: 85px;
+    right: 5%;
+  }
+
+  .love-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px 9px;
+  }
+
+  .love-card {
+    min-height: 133px;
+    padding: 12px 5px 10px;
+    border-radius: 11px;
+  }
+
+  .love-card-icon {
+    min-height: 29px;
+    margin-bottom: 6px;
+    font-size: 24px;
+  }
+
+  .love-card h3 {
+    margin-bottom: 6px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .love-card p {
+    font-size: 8px;
+    line-height: 1.7;
+  }
+
+  .love-note {
+    min-height: 100px;
+    font-size: 19px;
+  }
+
+  .love-note span {
+    font-size: 18px;
+  }
+
+  .love-flower {
+    bottom: -24px;
+    font-size: 28px;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 360px) {
+  .love-section {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .love-grid {
+    gap: 10px 7px;
+  }
+
+  .love-card {
+    min-height: 125px;
+    padding: 10px 3px;
+  }
+
+  .love-card h3 {
+    font-size: 8px;
+  }
+
+  .love-card p {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+.about-you-section {
+  min-height: 100vh;
+  padding: 40px 20px;
+  overflow: hidden;
+  background: #fff3eb;
+  color: #49304d;
+}
+
+.about-you-container {
+  position: relative;
+  max-width: 650px;
+  margin: auto;
+  padding: 20px 10px 40px;
+}
+
+.about-you-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-you-heart {
+  font-size: 45px;
+  color: #92385c;
+}
+
+.about-you-heading h2 {
+  margin: 8px 0;
+  font: 600 clamp(28px, 5vw, 38px) "Dancing Script", cursive;
+}
+
+.about-you-heading p {
+  font: 12px "Poppins", sans-serif;
+  color: #745b76;
+}
+
+.about-you-hearts span {
+  position: absolute;
+  color: #e783a2;
+  font-size: 20px;
+}
+
+.about-you-hearts span:nth-child(1) { top: 65px; left: 12%; }
+.about-you-hearts span:nth-child(2) { top: 80px; right: 15%; color: #e9ae66; }
+.about-you-hearts span:nth-child(3) { top: 110px; left: 4%; }
+.about-you-hearts span:nth-child(4) { top: 150px; right: 5%; }
+.about-you-hearts span:nth-child(5) { top: 210px; left: 3%; }
+.about-you-hearts span:nth-child(6) { top: 220px; right: 4%; }
+.about-you-hearts span:nth-child(7) { bottom: 160px; right: 8%; }
+.about-you-hearts span:nth-child(8) { bottom: 100px; left: 7%; }
+
+.about-you-content {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  align-items: center;
+  gap: 18px;
+}
+
+.love-letter {
+  padding: 25px 22px;
+  min-height: 245px;
+  background: #fffaf2;
+  border: 1px solid #ead6c9;
+  border-radius: 8px;
+  box-shadow: 0 5px 14px #704b4215;
+  transform: rotate(-4deg);
+}
+
+.love-letter p {
+  margin: 0 0 17px;
+  font: 500 19px/1.7 "Dancing Script", cursive;
+}
+
+.love-letter .letter-signature {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.letter-signature span {
+  color: #a43d64;
+}
+
+.about-photo-card {
+  padding: 7px 7px 2px;
+  background: #fffdf9;
+  border: 1px solid #e8d5cb;
+  border-radius: 4px;
+  box-shadow: 0 5px 12px #704b4218;
+  transform: rotate(3deg);
+}
+
+.about-photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 0.76;
+  object-fit: cover;
+}
+
+.about-photo-card > span {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  color: #a43d64;
+  font-size: 23px;
+}
+
+.about-reasons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 440px;
+  margin: 50px auto 0;
+}
+
+.about-reason {
+  padding: 16px 8px;
+  text-align: center;
+  border: 1px solid #f5e1dc;
+  border-radius: 18px;
+  background: #fff7f3a8;
+}
+
+.about-reason span {
+  font-size: 31px;
+  color: #c64e78;
+}
+
+.about-reason p {
+  margin: 8px 0 0;
+  font: 11px "Poppins", sans-serif;
+}
+
+.about-flower {
+  position: absolute;
+  bottom: 0;
+  font-size: 44px;
+  color: #9caa92;
+}
+
+.about-flower-left { left: 0; transform: rotate(-35deg); }
+.about-flower-right { right: 0; transform: scaleX(-1) rotate(-35deg); }
+
+@media (max-width: 600px) {
+  .about-you-section { padding: 25px 14px; }
+  .about-you-container { padding: 15px 2px 35px; }
+  .about-you-heading { margin-bottom: 35px; }
+  .about-you-content { grid-template-columns: 1.35fr 0.8fr; gap: 12px; }
+  .love-letter { min-height: 215px; padding: 17px 12px; }
+  .love-letter p { font-size: 15px; margin-bottom: 14px; }
+  .about-photo-card { padding: 5px 5px 0; }
+  .about-reasons { gap: 10px; margin-top: 40px; }
+  .about-reason { padding: 13px 4px; }
+  .about-reason span { font-size: 27px; }
+  .about-reason p { font-size: 9px; }
+}

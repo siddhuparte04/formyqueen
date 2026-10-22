@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+/* Section background */
+.letter-section {
+  min-height: 100vh;
+  padding: 35px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff0eb;
+}
+
+/* Paper letter */
+.birthday-letter {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+  min-height: 720px;
+  padding: 40px 32px 65px;
+  overflow: hidden;
+  text-align: center;
+  color: #51334c;
+
+  background:
+    radial-gradient(
+      ellipse at 15% 15%,
+      rgba(255, 255, 255, 0.85),
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse at 90% 90%,
+      rgba(248, 213, 199, 0.35),
+      transparent 50%
+    ),
+    #fff8f1;
+
+  border: 1px solid #f4ded3;
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 18px rgba(115, 67, 67, 0.10),
+    inset 0 0 25px rgba(220, 172, 153, 0.10);
+}
+
+/* Folded top-right paper corner */
+.birthday-letter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(225deg, #f4ded3 50%, #fff0e8 50%);
+  border-radius: 0 10px 0 8px;
+  box-shadow: -2px 2px 4px rgba(100, 60, 60, 0.06);
+}
+
+/* Decorative hearts and flowers */
+.letter-heart {
+  margin-bottom: 12px;
+  color: #ae3159;
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.flower {
+  position: absolute;
+  z-index: 1;
+  font-size: 38px;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.flower-top-left {
+  top: 20px;
+  left: 12px;
+  transform: rotate(-18deg);
+}
+
+.flower-bottom-left {
+  bottom: 18px;
+  left: 12px;
+  transform: rotate(-25deg);
+}
+
+.flower-bottom-right {
+  right: 12px;
+  bottom: 12px;
+  transform: rotate(20deg);
+}
+
+/* Main heading */
+.birthday-letter h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #482c46;
+}
+
+/* Pink hand-drawn underline */
+.heart-underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 12px auto 28px;
+  width: 150px;
+  transform: rotate(-5deg);
+}
+
+.heart-underline span:first-child {
+  display: block;
+  width: 135px;
+  height: 4px;
+  border-radius: 50%;
+  background: #f3a9b0;
+}
+
+.underline-heart {
+  margin-left: -2px;
+  color: #a5355a;
+  font-size: 11px;
+}
+
+/* Birthday message */
+.letter-message {
+  position: relative;
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #55445a;
+}
+
+.letter-message p {
+  margin: 0 0 16px;
+}
+
+/* Closing line */
+.letter-message .letter-signature {
+  margin-top: 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 27px;
+  font-weight: 600;
+  color: #553451;
+}
+
+.letter-signature span {
+  margin-left: 8px;
+  color: #ae3159;
+}
+
+/* Always yours at bottom-right */
+.always-yours {
+  position: absolute;
+  right: 22px;
+  bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+
+  transform: rotate(-15deg);
+  font-family: "Dancing Script", cursive;
+  font-size: 17px;
+  font-weight: 700;
+  color: #75455d;
+}
+
+.always-yours span {
+  font-size: 19px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .letter-section {
+    min-height: 100svh;
+    padding: 20px 12px;
+  }
+
+  .birthday-letter {
+    min-height: 0;
+    padding: 20px 14px 65px;
+    border-radius: 10px;
+  }
+
+  .letter-heart {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .birthday-letter h2 {
+    font-size: clamp(24px, 7vw, 31px);
+  }
+
+  .heart-underline {
+    width: 125px;
+    margin-top: 9px;
+    margin-bottom: 24px;
+  }
+
+  .heart-underline span:first-child {
+    width: 112px;
+  }
+
+  .letter-message {
+    font-size: clamp(10px, 3.1vw, 12px);
+    line-height: 1.9;
+  }
+
+  .letter-message p {
+    margin-bottom: 14px;
+  }
+
+  .letter-message .letter-signature {
+    margin-top: 18px;
+    font-size: 24px;
+  }
+
+  .flower {
+    font-size: 29px;
+  }
+
+  .flower-top-left {
+    top: 10px;
+    left: 5px;
+  }
+
+  .flower-bottom-left {
+    bottom: 10px;
+    left: 5px;
+  }
+
+  .flower-bottom-right {
+    right: 5px;
+    bottom: 8px;
+  }
+
+  .always-yours {
+    right: 16px;
+    bottom: 28px;
+    font-size: 14px;
+  }
+}
+
+/* Extra-small phones */
+@media (max-width: 360px) {
+  .birthday-letter {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .letter-message br {
+    display: none;
+  }
+
+  .letter-message p {
+    margin-bottom: 12px;
+  }
+}
+
