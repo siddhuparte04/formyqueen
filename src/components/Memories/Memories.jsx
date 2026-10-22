@@ -5,8 +5,8 @@ import img1 from './Our Little Moments/1.jpg'
 import img2 from './Our Little Moments/2.jpg'
 import img3 from './Our Little Moments/3.jpg'
 import img4 from './Our Little Moments/4.jpg'
-import img5 from './Our Little Moments/5.jpg'
-import img6 from './Our Little Moments/6.jpg'
+import img5 from "./Our Little Moments/5.JPG";
+import img6 from "./Our Little Moments/6.JPG";
 import img7 from './Our Little Moments/7.jpg'
 import img8 from './Our Little Moments/8.jpg'
 import img9 from './Our Little Moments/9.jpg'
